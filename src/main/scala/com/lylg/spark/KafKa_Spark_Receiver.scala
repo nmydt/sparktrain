@@ -19,7 +19,7 @@ import java.io.{File, PrintWriter}
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 
-object KafKa_Spark_Direct {
+object KafKa_Spark_Receiver {
   def main(args: Array[String]): Unit = {
 //        System.setProperty("hadoop.home.dir", "C:\\winutils")
     if (args.length != 4) {
