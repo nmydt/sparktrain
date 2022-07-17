@@ -133,8 +133,7 @@ public class HBaseUtils {
 
         System.out.println("查询全表数据");
         HBaseUtils.getInstance().scan("lylg_visit");
-//        System.out.println("lylg_register");
-//        HBaseUtils.getInstance().scan("lylg_register");
+        HBaseUtils.getInstance().scan("lylg_register");
         HBaseUtils.getInstance().scan("lylg_active");
         HBaseUtils.getInstance().scan("lylg_select");
         HBaseUtils.getInstance().scan("lylg_total");
