@@ -33,12 +33,10 @@ jobs:
           echo "build sparktrain success"
           mkdir sparktrain
           ls -al target
-          cp target/kafka-map*.jar kafka-map/kafka-map.jar
-          cp src/main/resources/application.yml kafka-map/application.yml
-          tar zcvf kafka-map.tar.gz kafka-map/
+          cp target/sparktrain-1.0-jar-with-dependencies.jar ./sparktrain-1.0-jar-with-dependencies.jar
       - name: release
         uses: softprops/action-gh-release@v1
         with:
-          files: kafka-map.tar.gz
+          files: sparktrain-1.0-jar-with-dependencies.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
