@@ -3,8 +3,7 @@ name: Sparktrain Build
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v*"
+
 permissions:
   contents: write
   discussions: write
